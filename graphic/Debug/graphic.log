@@ -1,0 +1,20 @@
+﻿  graphic.cpp
+C:\Users\hell\WINAPI\graphic\graphic\graphic.cpp(13,21): warning C4566: character represented by universal-character-name '\u0418' cannot be represented in the current code page (1252)
+C:\Users\hell\WINAPI\graphic\graphic\graphic.cpp(13,21): warning C4566: character represented by universal-character-name '\u043C' cannot be represented in the current code page (1252)
+C:\Users\hell\WINAPI\graphic\graphic\graphic.cpp(13,21): warning C4566: character represented by universal-character-name '\u044F' cannot be represented in the current code page (1252)
+C:\Users\hell\WINAPI\graphic\graphic\graphic.cpp(13,21): warning C4566: character represented by universal-character-name '\u043F' cannot be represented in the current code page (1252)
+C:\Users\hell\WINAPI\graphic\graphic\graphic.cpp(13,21): warning C4566: character represented by universal-character-name '\u0440' cannot be represented in the current code page (1252)
+C:\Users\hell\WINAPI\graphic\graphic\graphic.cpp(13,21): warning C4566: character represented by universal-character-name '\u043E' cannot be represented in the current code page (1252)
+C:\Users\hell\WINAPI\graphic\graphic\graphic.cpp(13,21): warning C4566: character represented by universal-character-name '\u0433' cannot be represented in the current code page (1252)
+C:\Users\hell\WINAPI\graphic\graphic\graphic.cpp(13,21): warning C4566: character represented by universal-character-name '\u0430' cannot be represented in the current code page (1252)
+C:\Users\hell\WINAPI\graphic\graphic\graphic.cpp(13,21): warning C4566: character represented by universal-character-name '\u044B' cannot be represented in the current code page (1252)
+C:\Users\hell\WINAPI\graphic\graphic\graphic.cpp(198,17): warning C4244: 'argument': conversion from 'time_t' to 'unsigned int', possible loss of data
+C:\Users\hell\WINAPI\graphic\graphic\graphic.cpp(208,25): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\hell\WINAPI\graphic\graphic\graphic.cpp(208,22): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\hell\WINAPI\graphic\graphic\graphic.cpp(211,22): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\hell\WINAPI\graphic\graphic\graphic.cpp(211,19): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\hell\WINAPI\graphic\graphic\graphic.cpp(239,20): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\hell\WINAPI\graphic\graphic\graphic.cpp(239,16): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\hell\WINAPI\graphic\graphic\graphic.cpp(240,25): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+C:\Users\hell\WINAPI\graphic\graphic\graphic.cpp(240,21): warning C4244: 'argument': conversion from 'double' to 'int', possible loss of data
+  graphic.vcxproj -> C:\Users\hell\WINAPI\graphic\Debug\graphic.exe
