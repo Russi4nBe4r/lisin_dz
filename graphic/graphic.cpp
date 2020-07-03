@@ -193,26 +193,21 @@ LRESULT CALLBACK WndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 		//Создание красного пера
 		hPen = CreatePen(1, 4, RGB(255, 25, 0));
 		SelectObject(hdc, hPen);
-				for (i = 0; i <= 720	; i++) {
-					r = i * pi / 180;
-						srand(time(0));
+				for (i = -450; i <= 450; i++) {
+					r = i / 90;
 						hPen = CreatePen(1, 4, RGB(rand() % 255, 0, 0));
 						SelectObject(hdc, hPen);
-						//y = (1 + 2*sin(15*r))*(1 + cos(35*r)) ^ (1 + 5*cos(6*r))*(1 - sin(20*r));
+						y = (1 + 2 * sin(15 * r)) * pow((1 + 1 * cos(35 * r)), (1 + 5 * cos(6 * r)));
+						x = r;
 
-						y = (1 + 2 * sin(15 * r)) * pow((1 + cos(35 * r)), (1 + 5 * cos(6 * r))) * (1 - sin(20 * r));
-						x = i;
+						x = y*cos(r);
+						y *= sin(r);
 
-						//LineTo(hdc, x, y);
 						if ((ff == 0)) {
 							MoveToEx(hdc, x, y, NULL);
 							ff = 1;
 						}
 						LineTo(hdc, x, y);
-
-					//MoveToEx(hdc, x, y, NULL);
-
-				//MoveToEx(hdc, count, y, NULL);
 
 				}
 		//InvalidateRect(hWnd, NULL, TRUE);
@@ -238,4 +233,23 @@ BOOL DLine(HDC hdc, double x1, double y1, double x2, double y2)
 {
 	MoveToEx(hdc, x1, y1, NULL); //сделать текущими координаты x1, y1
 	return LineTo(hdc, x2, y2); //нарисовать линию
+}
+// Обработчик сообщений для окна "О программе".
+INT_PTR CALLBACK About(HWND hDlg, UINT message, WPARAM wParam, LPARAM lParam)
+{
+	UNREFERENCED_PARAMETER(lParam);
+	switch (message)
+	{
+	case WM_INITDIALOG:
+		return (INT_PTR)TRUE;
+
+	case WM_COMMAND:
+		if (LOWORD(wParam) == IDOK || LOWORD(wParam) == IDCANCEL)
+		{
+			EndDialog(hDlg, LOWORD(wParam));
+			return (INT_PTR)TRUE;
+		}
+		break;
+	}
+	return (INT_PTR)FALSE;
 }
